@@ -6,67 +6,67 @@
 ### The project consists of three main phases: EDA, Data Cleaning, and Feature Engineering & Preprocessing.
 
 
-File used: hotel_bookings.csv
+### File used: hotel_bookings.csv
 
-Contains booking data for two hotels (City Hotel & Resort Hotel).
+### Contains booking data for two hotels (City Hotel & Resort Hotel).
 
-Columns include: booking dates, customer information, length of stay, number of people, payment methods, etc.
+### Columns include: booking dates, customer information, length of stay, number of people, payment methods, etc.
 
 # Phase 1 – Exploratory Data Analysis (EDA)
 
-Examine the general structure of the data (.info(), .describe()).
+### Examine the general structure of the data (.info(), .describe()).
 
-Analyze missing values ​​using tables and visualizations.
+### Analyze missing values ​​using tables and visualizations.
 
-Detect outliers using boxplots and IQR.
+### Detect outliers using boxplots and IQR.
 
-Write a Data Quality Report to identify columns that need cleaning.
+### Write a Data Quality Report to identify columns that need cleaning.
 
 # Phase 2 – Data Cleaning
 
-Address Missing Values:
+### Address Missing Values:
 
-company and agent → "None".
+### company and agent → "None".
 
-country → Mode or "Unknown".
+### country → Mode or "Unknown".
 
-children → Median/Mode.
+### children → Median/Mode.
 
-Remove duplicates.
+### Remove duplicates.
 
-Process outliers (e.g., setting a cap on the adr value).
+### Process outliers (e.g., setting a cap on the adr value).
 
-Convert data types (e.g., converting dates to datetime).
+### Convert data types (e.g., converting dates to datetime).
 
 # Phase 3 – Feature Engineering & Preprocessing
 
-Create new features:
+### Create new features:
 
-total_guests = adults + children + babies.
+### total_guests = adults + children + babies.
 
-total_nights = stays_in_weekend_nights + stays_in_week_nights.
+### total_nights = stays_in_weekend_nights + stays_in_week_nights.
 
-is_family (family reservation).
+### is_family (family reservation).
 
-Encoding for categorical variables:
+### Encoding for categorical variables:
 
-One-Hot Encoding (for variables with low cardinality).
+### One-Hot Encoding (for variables with low cardinality).
 
-Grouping rare categories as "Other".
+### Grouping rare categories as "Other".
 
-Remove columns with leaky information:
+### Remove columns with leaky information:
 
-reservation_status and reservation_status_date.
+### reservation_status and reservation_status_date.
 
-Split the data into a Train/Test split (80/20).
+### Split the data into a Train/Test split (80/20).
 
-Not Included (Out of Scope)
+### Not Included (Out of Scope)
 
-Build predictive models.
+### Build predictive models.
 
-Hyperparameter tuning.
+### Hyperparameter tuning.
 
-Model evaluation.
+### Model evaluation.
 
 # Project Structure
 ### ├── hotel_bookings.csv
