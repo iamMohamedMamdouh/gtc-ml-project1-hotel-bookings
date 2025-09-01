@@ -1,4 +1,4 @@
-# Hotel Booking Demand – Data Preprocessing
+# Hotel Booking – Data Preprocessing
 # Project Overview
 
 ### The goal of the project is to prepare and process hotel booking data to be suitable for building predictive models in the future.
