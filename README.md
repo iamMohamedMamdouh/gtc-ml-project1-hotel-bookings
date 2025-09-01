@@ -1,8 +1,8 @@
 # Hotel Booking Demand – Data Preprocessing
 # Project Overview
 
-الهدف من المشروع هو تجهيز ومعالجة بيانات حجوزات الفنادق لتكون صالحة لبناء نماذج تنبؤية مستقبلًا.
-المشروع يمر بثلاث مراحل أساسية: EDA, Data Cleaning, و Feature Engineering & Preprocessing.
+#الهدف من المشروع هو تجهيز ومعالجة بيانات حجوزات الفنادق لتكون صالحة لبناء نماذج تنبؤية مستقبلًا.
+#المشروع يمر بثلاث مراحل أساسية: EDA, Data Cleaning, و Feature Engineering & Preprocessing.
 
 ⚙️ Dataset
 
