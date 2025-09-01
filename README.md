@@ -1,74 +1,74 @@
 # Hotel Booking Demand – Data Preprocessing
 # Project Overview
 
-#الهدف من المشروع هو تجهيز ومعالجة بيانات حجوزات الفنادق لتكون صالحة لبناء نماذج تنبؤية مستقبلًا.
-#المشروع يمر بثلاث مراحل أساسية: EDA, Data Cleaning, و Feature Engineering & Preprocessing.
+### The goal of the project is to prepare and process hotel booking data to be suitable for building predictive models in the future.
 
-⚙️ Dataset
+### The project consists of three main phases: EDA, Data Cleaning, and Feature Engineering & Preprocessing.
 
-الملف المستخدم: hotel_bookings.csv
 
-يحتوي على بيانات حجوزات لفندقين (City Hotel & Resort Hotel).
+File used: hotel_bookings.csv
 
-الأعمدة تشمل: تواريخ الحجز، معلومات العملاء، مدة الإقامة، عدد الأشخاص، طرق الدفع… إلخ.
+Contains booking data for two hotels (City Hotel & Resort Hotel).
+
+Columns include: booking dates, customer information, length of stay, number of people, payment methods, etc.
 
 # Phase 1 – Exploratory Data Analysis (EDA)
 
-فحص البنية العامة للبيانات (.info(), .describe()).
+Examine the general structure of the data (.info(), .describe()).
 
-تحليل missing values باستخدام جداول و visualizations.
+Analyze missing values ​​using tables and visualizations.
 
-اكتشاف outliers باستخدام boxplots و IQR.
+Detect outliers using boxplots and IQR.
 
-كتابة Data Quality Report لتحديد الأعمدة التي تحتاج تنظيف.
+Write a Data Quality Report to identify columns that need cleaning.
 
 # Phase 2 – Data Cleaning
 
-معالجة الـ Missing Values:
+Address Missing Values:
 
-company و agent → "None".
+company and agent → "None".
 
-country → Mode أو "Unknown".
+country → Mode or "Unknown".
 
 children → Median/Mode.
 
-إزالة Duplicates.
+Remove duplicates.
 
-معالجة Outliers (مثال: تحديد سقف لقيمة adr).
+Process outliers (e.g., setting a cap on the adr value).
 
-تحويل أنواع البيانات (مثل تحويل التواريخ لـ datetime).
+Convert data types (e.g., converting dates to datetime).
 
 # Phase 3 – Feature Engineering & Preprocessing
 
-إنشاء Features جديدة:
+Create new features:
 
 total_guests = adults + children + babies.
 
 total_nights = stays_in_weekend_nights + stays_in_week_nights.
 
-is_family (حجز عائلي).
+is_family (family reservation).
 
-Encoding للمتغيرات التصنيفية:
+Encoding for categorical variables:
 
-One-Hot Encoding (للمتغيرات ذات الكارديناليتي المنخفضة).
+One-Hot Encoding (for variables with low cardinality).
 
-Grouping rare categories كـ "Other".
+Grouping rare categories as "Other".
 
-إزالة الأعمدة المسربة للمعلومات:
+Remove columns with leaky information:
 
-reservation_status و reservation_status_date.
+reservation_status and reservation_status_date.
 
-تقسيم البيانات إلى Train/Test split (80/20).
+Split the data into a Train/Test split (80/20).
 
- Not Included (Out of Scope)
+Not Included (Out of Scope)
 
-بناء النماذج التنبؤية.
+Build predictive models.
 
 Hyperparameter tuning.
 
 Model evaluation.
 
-📂 Project Structure
-├── hotel_bookings.csv
-├── notebook.ipynb   # يحتوي الكود والتحليلات
-└── README.md        # وصف المشروع
+# Project Structure
+### ├── hotel_bookings.csv
+### ├── notebook.ipynb # Contains code and analytics
+### └── README.md # Project description
